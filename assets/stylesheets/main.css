@@ -136,3 +136,17 @@ p {
 	padding: 40px 0 22px 0;
 	float: left;
 }
+
+/*
+	========================================
+	Primary footer
+	========================================
+*/
+
+.primary-footer {
+	padding-top: 44px;
+	padding-bottom: 44px;
+}
+.primary-footer small {
+	float: left;
+}
