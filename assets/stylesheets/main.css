@@ -55,34 +55,7 @@ table {
 
 body {
 	color: #888;
-	font: 300 16px/22px "Lato", "Open Sans","Helvetice Neue", Helvetice, Arial, sans-serif;
-}
-strong {
-	font-weight: 400;
-}
-cite,
-em {
-	font-style: italic;
-}
-
-/*
-  ========================================
-	Links
-	========================================
-*/
-
-a:hover {
-	color: #a9b2b9;
-}
-a {
-	color: #648880;
-	text-decoration: none;
-}
-p a {
-	border-bottom: 1px solid #dfe2e5;
-}
-.teaser a:hover h3 {
-	color: #a9b2b9;
+	font: 300 16px/22px "Lato", "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -95,8 +68,8 @@ p a {
 *:before,
 *:after {
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+		 			box-sizing: border-box;
 }
 .container,
 .grid {
@@ -107,22 +80,22 @@ p a {
 	padding-left: 30px;
 	padding-right: 30px;
 }
-.col-1-3 {
-	width: 33.33%
-}
+.grid,
+.col-1-3,
 .col-2-3 {
-	width: 66.66%;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .col-1-3,
 .col-2-3 {
 	display: inline-block;
 	vertical-align: top;
 }
-.grid,
-.col-1-3,
+.col-1-3 {
+	width: 33.33%
+}
 .col-2-3 {
-	padding-left: 15px;
-	padding-right: 15px;
+	width: 66.66%;
 }
 
 /*
@@ -141,6 +114,7 @@ p a {
 }
 .clearfix {
 	clear: both;
+	*zoom: 1;
 }
 
 /*
@@ -149,18 +123,11 @@ p a {
 	========================================
 */
 
-h1,
-h3,
-h4,
-h5,
-p {
-	margin-bottom: 22px;
-}
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
 	color: #648880;
+}
+h1, h3, h4, h5, p {
+	margin-bottom: 22px;
 }
 h1 {
 	font-size: 36px;
@@ -182,6 +149,30 @@ h5 {
 	font-weight: 400;
 	text-transform: uppercase;
 }
+strong {
+	font-weight: 400;
+}
+cite,
+em {
+	font-style: italic;
+}
+
+/*
+  ========================================
+	Links
+	========================================
+*/
+
+a {
+	color: #648880;
+	text-decoration: none;
+}
+a:hover {
+	color: #a9b2b9;
+}
+p a {
+	border-bottom: 1px solid #dfe2e5;
+}
 
 /*
 	========================================
@@ -197,25 +188,6 @@ h5 {
 .btn-alt {
 	border: 1px solid #dfe2e5;
 	padding: 10px 30px;
-}
-
-/*
-	========================================
-	Home
-	========================================
-*/
-
-.hero {
-	line-height: 44px;
-	padding: 22px 80px 66px 80px;
-	text-align: center;
-}
-.hero h2 {
-	font-size: 36px;
-}
-.hero p {
-	font-size: 24px;
-	font-weight: 100;
 }
 
 /*
@@ -270,4 +242,26 @@ h5 {
 
 .nav {
 	text-align: right;
+}
+
+/*
+	========================================
+	Home
+	========================================
+*/
+
+.hero {
+	line-height: 44px;
+	padding: 22px 80px 66px 80px;
+	text-align: center;
+}
+.hero h2 {
+	font-size: 36px;
+}
+.hero p {
+	font-size: 24px;
+	font-weight: 100;
+}
+.teaser a:hover h3 {
+	color: #a9b2b9;
 }
