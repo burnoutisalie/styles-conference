@@ -76,6 +76,10 @@ a:hover {
 }
 a {
 	color: #648880;
+	text-decoration: none;
+}
+p a {
+	border-bottom: 1px solid #dfe2e5;
 }
 .teaser a:hover h3 {
 	color: #a9b2b9;
